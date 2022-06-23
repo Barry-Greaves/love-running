@@ -17,32 +17,40 @@
         <nav>
             <ul id="menu">
                <li>
-                <a href="index.html">Home</a>
+                <a href="index.html" >Home</a>
                </li>
                <li>
-                <a href="gallery.html" class="active">Gallery</a>
+                <a href="gallery.html">Gallery</a>
                </li>
                <li>
-                <a href="signup.html">Sign Up</a>
+                <a href="signup.html" class="active">Sign Up</a>
                </li>
             </ul>
         </nav>
     </header>
-
-    <section id="photos">
-        <img src ="assets/images/athletes.jpeg" alt="Two athletes running together">
-        <img src ="assets/images/girls.jpeg" alt="Three girls at charity paint run">
-        <img src ="assets/images/runner3.jpeg" alt="Solo male jogging on a beach">
-        <img src ="assets/images/man.jpeg" alt="Man at charity paint run">
-        <img src ="assets/images/runner1.jpeg" alt="Solo female runner in Phoenix park">
-        <img src ="assets/images/runner2.jpeg" alt="Runners competing in marathon">
-        <img src ="assets/images/runner4.jpeg" alt="Solo female runner jogging on a beach">
-        <img src ="assets/images/running_gang.jpeg" alt="Large group of runners taking part in a marathon">
-        <img src ="assets/images/mud-run.jpeg" alt="Two women runners taking a selfie in the mud">
-  
+    <section class="form-section">
+        <form method="POST" action="https://formdump.codeinstitute.net/" class="signup-form">
+            <h2>Let's get you signed up! <i class="fas fa-heartbeat"></i></h2>
+            <label for="fname">First Name</label>
+            <input class="text-input" id="fname" name="first_name" type="text" required>
+            
+            <label for="lname">Last Name</label>
+            <input class="text-input" id="lname" name="last_name" type="text" required>
+            
+            <label for="email">Email Address</label>
+            <input class="text-input" type="email" id="email" name="email_address" required>
+            
+            <label for="road">Road</label>
+            <input type="radio" id="road" name="running_preference" value="road" required>
+            <label for="trail">Trail</label>
+            <input type="radio" id="trail" name="running_preference" value="trail" required>
+            <label for="both">Both</label>
+            <input type="radio" id="both" name="running_preference" value="both" required>
+            
+            <input class="join-button" type="submit" value="Let's Run!">
+        </form>
     </section>
-
-    <footer>
+   <footer>
         <ul class="social-networks">
             <li>
                 <a href="https://www.facebook.com" target="_blank" rel="noopener" 
